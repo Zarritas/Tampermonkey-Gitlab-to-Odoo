@@ -42,6 +42,7 @@
             img.height = '25'
             img.alt = ''
             span.innerText = 'Abrir en Gextia';
+            button.appendChild(img)
             button.appendChild(span);
 
             // Añade un evento al botón para enviar la URL
