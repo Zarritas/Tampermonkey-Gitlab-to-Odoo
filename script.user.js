@@ -18,7 +18,12 @@
     'use strict';
 
     function setOdooUrl(){
-        GM_setValue('odoo_url', prompt("¿Cual es la url a conectar? Ej.: 'https://odoo.tu-empresa.com'"))
+        const new_url = prompt("¿Cual es la url a conectar? Ej.: 'https://odoo.tu-empresa.com'")
+        if (new_url){
+            GM_setValue('odoo_url', new_url)
+        }else{
+            GM_setValue('odoo_url',GM_getValue('odoo_url',''))
+        }
     }
 
     window.addEventListener('load', function() {
