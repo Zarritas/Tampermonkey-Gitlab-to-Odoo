@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Gitlab To Odoo
 // @namespace    http://tampermonkey.net/
-// @version      2026-04-13
+// @version      2026-04-14
 // @description  try to take over the world!
 // @author       Factor Libre - Jesús Lorenzo
 // @include      https://git.*.com/*
