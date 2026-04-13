@@ -4,8 +4,8 @@
 // @version      2026-04-13
 // @description  try to take over the world!
 // @author       Factor Libre - Jesús Lorenzo
-// @match        https://git.*
-// @match        https://*.gitlab.*
+// @include      https://git.*.com/*
+// @include      https://*.gitlab.*/*
 // @icon         https://gextia.com/wp-content/uploads/2025/01/gextia-favicon-150x150.png
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
