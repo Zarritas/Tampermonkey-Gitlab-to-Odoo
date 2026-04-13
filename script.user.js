@@ -18,7 +18,7 @@
     'use strict';
 
     function setOdooUrl(){
-        const new_url = prompt("¿Cual es la url a conectar? Ej.: 'https://odoo.tu-empresa.com'")
+        const new_url = prompt("¿Cual es la url a conectar? Ej.: 'https://gextia.tu-empresa.com'")
         if (new_url){
             GM_setValue('odoo_url', new_url)
         }else{
@@ -37,7 +37,11 @@
             const button = document.createElement('button');
             button.classList.add('btn', 'hide-collapsed', 'btn-default', 'btn-sm', 'gl-button');
             const span = document.createElement('span');
-            span.innerText = 'Abrir en Odoo';
+            const img = document.createElement('img');
+            img.href = 'https://gextia.com/wp-content/uploads/2025/01/gextia-favicon-150x150.png'
+            img.height = '25'
+            img.alt = ''
+            span.innerText = 'Abrir en Gextia';
             button.appendChild(span);
 
             // Añade un evento al botón para enviar la URL
